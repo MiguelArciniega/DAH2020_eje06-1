@@ -31,8 +31,8 @@ export class StudentService {
     return this.students;
   }
 
-  changeStatus(position): void{
-    this.students[position].active = this.students[position].active;
+  changeStatus(position: number): void{
+    this.students[position].active = !this.students[position].active;
   }
 }
 
